@@ -1,0 +1,23 @@
+{
+  "name": "assignment-c",
+  "productName": "assignment-c",
+  "version": "1.0.0",
+  "main": "main.js",
+   "scripts": {
+    "package-win": "electron-packager . assignment-c --overwrite --asar=true --platform=win32 --arch=ia32 --icon=assets/icons/win/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"assignment-c\"",
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chunk": "^0.0.2",
+    "fs": "^0.0.1-security",
+    "init": "^0.1.2",
+    "jquery": "^3.2.1",
+    "jsonfile": "^4.0.0",
+    "semantic-ui": "^2.2.13"
+  },
+  "devDependencies": {
+    "electron": "^1.7.9",
+    "electron-packager": "^10.1.0"
+  }
+}

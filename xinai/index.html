@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="node_modules/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="Semantic-UI-CSS-master/semantic.min.css">
+	<title>Golf Club Bookings</title>
+</head>
+<body>
+	<section id="sec01">
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui form attached segment" style="width: 60%; margin: auto;">
+			<div>
+				<b><u>F</u>ile
+				<u>R</u>ecords
+				<u>E</u>nd
+				</b>
+			</div>
+			<h1 class="ui header" style="text-align: center;">Golf Club Bookings</h1>
+		<div class="ui negative message error-message" id="error0"> 
+	        <label class="header" style="text-align: center;">Please complete the form</label>
+	    </div>
+	    <div class="ui success message" id="error00"> 
+	        <label class="header" style="text-align: center;">Success</label>
+	    </div>
+			<div class="ui form">
+				<div class="two fields">
+					<div class="field">
+			      		<label>Membership Number:</label>
+			      		<input type="number" class="input" id="number1" placeholder="Membership Number">
+			      		<div class="ui pointing basic red label error-message" id="error01">
+			      			<label>Membership Number is not a valid modulus 11 number</label>
+				   		</div>
+				   		<div class="ui pointing basic red label error-message" id="error02">
+			      			<label>Membership Number is not 6 digits</label>
+				   		</div>
+					</div>
+					<div class="field">
+			      		<label>Number of Guests:</label>
+			      		<input type="text" class="input" id="guest">
+					</div>
+				</div>
+				<div class="two fields">
+					<div class="field">
+			      		<label>First Name:</label>
+			      		<input type="text" class="input" id="first" placeholder="First Name">
+					</div>
+					<div class="field">
+			      		<label>Last Name:</label>
+			      		<input type="text" class="input" id="last" placeholder="Last Name">
+					</div>
+				</div>
+				<div class="two fields">
+					<div class="field">
+			      		<label>Date of Game:</label>
+			      		<input type="date" class="input" id="game">
+					</div>
+					<div class="field">
+			      		<label>Booking of Date:</label>
+			      		<input type="date" class="input" id="booking">
+					</div>
+				</div>	
+				<div class="three fields">
+					<div class="field">
+			      		<label>Guest 1:</label>
+			      		<input type="text" class="input" id="guest1">
+					</div>
+					<div class="field">
+			      		<label>Guest 2:</label>
+			      		<input type="text" class="input" id="guest2">
+					</div>
+					<div class="field">
+			      		<label>Guest 3:</label>
+			      		<input type="text" class="input" id="guest3">
+					</div>
+				</div>	
+				<div class="three fields">
+					<div class="field">
+			      		<label>Personal Transport (Buggy):</label>
+						<select class="ui dropdown input-save" id="transport">
+			              	<option value="Y">Yes</option>
+			              	<option value="N">No</option>
+			            </select>					
+			        </div>
+					<div class="field">
+			      		<label>Number of Golf Bag Trolleys:</label>
+			      		<select class="ui dropdown input-save" id="trolleys">
+			              	<option value="0">0</option>
+			              	<option value="1">1</option>
+			              	<option value="2">2</option>
+			              	<option value="3">3</option>
+			              	<option value="4">4</option>
+			            </select>
+					</div>
+					<div class="field">
+			      		<label>Number of Holes:</label>
+			      		<select class="ui dropdown input-save" id="holes">
+			              	<option value="9">9</option>
+			              	<option value="18">18</option>
+			            </select>
+					</div>
+				</div>		
+			</div>
+			<div class="ui hidden divider"></div>
+       		<div class="ui form">
+	       	<div class="ui bottom attached buttons">
+	        	<div class="ui primary button" id="save">Save</div>
+	      	</div>
+	    </div>
+		</div>
+	</section>
+</body>
+<script src="js/index.js"></script>
+</html>

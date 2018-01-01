@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title>Golf Club Booking</title>
+	<link rel="stylesheet" type="text/css" href="semantic-ui/dist/semantic.min.css">
+</head>
+<body style="background-color: powderblue">
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div style="font-weight: bold;">
+		<div class="ui hidden divider"></div>
+		<div class="ui form attached segment" style="width: 860px; margin: auto;">
+		<u>F</u>ile
+		<u>R</u>ecords
+		<u>E</u>nd
+		<div class="ui text container" id="container">
+			<h1 style="text-align:center;">Golf Club Booking</h1>
+			<div class="ui negative message error-message" id="error01">
+				<label style="text-align: center;" class="header">Form is not complete</label>
+			</div>
+			<div class="ui success message" id="error00">
+				<label style="text-align: center;" class="header">Success</label>
+			</div>
+			<div class="two fields">
+				<div class="field">
+					<label>Membership Number</label>
+					<input id="input_membership" class="input" type="number">
+					<div class="ui pointing basic red label error-message" id="error03">
+						<label>Membership Number is not 6 digit</label>
+					</div>
+					<div class="ui pointing basic red label error-message" id="error02">
+						<label>Membership Number is no valid modules 11 number</label>						
+					</div>
+				</div>
+				<div class="field">
+					<label>Number Of Guest</label>
+					<input id="input_guest" class="input" type="text">
+				</div>
+			</div>
+			<div class="ui hidden divider"></div>
+			<div class="two fields">
+				<div class="field">
+					<label>First Name</label>
+					<input id="input_first" class="input" type="text">
+				</div>
+				<div class="field">
+					<label>Last Name</label>
+					<input id="input_last" class="input" type="text">
+				</div>
+			</div>
+			<div class="ui hidden divider"></div>
+			<div class="two fields">
+				<div class="field">
+					<label>Date Of Game</label>
+					<input id="input_date_game" class="input" type="date">
+				</div>
+				<div class="field">
+					<label>Booking Game</label>
+					<input id="input_booking" class="input" type="date">
+				</div>
+			</div>
+			<div class="ui hidden divider"></div>
+			<div class="three fields">
+				<div class="field">
+					<label>Guest 1</label>
+					<input id="input_guest1" class="input" type="text">
+				</div>
+				<div class="field">
+					<label>Guest 2</label>
+					<input id="input_guest2" class="input" type="text">
+				</div>
+				<div class="field">
+					<label>Guest 3</label>
+					<input id="input_guest3" class="input" type="text">
+				</div>
+			</div>
+
+			<div class="ui hidden divider"></div>
+			<div class="three fields">
+				<div class="field">
+					<label>Personal Transport(Buggy)</label>
+					<select class="ui dropdown input-membership-type" name="type" id="input_transport">
+						<option value="Y">Y</option>
+						<option value="N">N</option>
+					</select>
+				</div>
+				<div class="field">
+					<label>Number Of Golf Bag Trolleys</label>
+					<select class="ui dropdown input-membership-type" name="type" id="input_golfbags">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+				</div>
+				<div class="field">
+					<label>Number Of Holes</label>
+					<select class="ui dropdown input-membership-type" name="type" id="input_number_holes">
+						<option value="9">9</option>
+						<option value="18">18</option>
+					</select>
+				</div>
+			</div>
+			<div class="ui hidden divider"></div>
+			<div class="ui form">
+				<div class="ui bottom attached buttons">
+					<div class="ui primary button" id="button">Save</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+<script src="index.js"></script>
+</html>
