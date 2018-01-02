@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <link rel="stylesheet" href="semantic.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Golf Club Bookings</title>
+</head>
+<body>
+
+  <p class="linetwo">Golf Club Bookings</p>
+
+  <section class="marginleft">
+
+  <div class="ui form">
+    <div class="three fields">
+      <div id="errormembership" class="field">
+        <label>Membership Number</label>
+        <input id="check" class="common1 input_membershipnumber membership" placeholder="Membership Number" required="true" type="number">
+        <label class="errormassage">Membership Number is not numeric</label>
+        <label class="modulus">Membership Number is not a valid modulus 11 number</label>
+        <label class="errormassage0">Membership Number is not 6 digits</label>
+      </div>
+      <div class="field">
+        <label>Number of Holes</label>
+        <select class="input_holes">
+          <option value="9">9</option>
+          <option value="18">18</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="ui form">
+    <div class="three fields">
+      <div id="errorfirstname" class="field">
+        <label>First Name</label>
+        <input id="firstname" class="common input_firstname" placeholder="First Name" type="text">
+        <label class="errormassage1">Please Input your FirstName & Cannot Input Number</label>
+      </div>
+      <div id="errorlastname" class="field">
+        <label>Last Name</label>
+        <input id="lastname" class="common input_lastname" placeholder="Last Name" type="text">
+        <label class="errormassage2">Please Input your LastName & Cannot Input Number</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui form">
+    <div class="three fields">
+      <div id="errordateofgame" class="field">
+        <label>Date of Game</label>
+        <input id="dateofgame" class="common input_dateofgame" type="date">
+        <label class="errormassage3">Invalid date of game</label>
+      </div>
+      <div id="errorbookingdate" class="field">
+        <label>Booking Date</label>
+        <input id="bookingdate" class="common input_bookingdate" type="date">
+        <label class="errormassage4">Invalid booking date</label>
+      </div>
+    </div>
+  </div>
+
+	<div class="ui form">
+    <div class="three fields">
+      <div id="errorguest1" class="field">
+        <label>Guest1</label>
+        <input id="guest1" class="common input_guest1" placeholder="Guest1" type="text">
+        <label class="errormassage5">Please Input your guest</label>
+      </div>
+      <div id="errorpersonal" class="field">
+        <label>Personal Transport(Buggy)</label>
+        <input id="personal" class="common input_personal" placeholder="Personal Transport(Buggy)" type="text">
+        <label class="errormassage6">Please Input your personal transport</label>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui form">
+    <div class="three fields">
+      <div id="errorguest2" class="field">
+        <label>Guest2</label>
+        <input id="guest2" class="common input_guest2" placeholder="Guest2" type="text">
+        <label class="errormassage7">Please Input your guest</label>
+      </div>
+      <div id="errorgolf" class="field">
+        <label>Number of Golf Bag Trolleys</label>
+        <select id="numbergolf" class="common input_golf" placeholder="Number of Golf Bag Trolleys" type="text"> 
+          <<option value="0">0</option>
+          <<option value="1">1</option>
+          <<option value="2">2</option>
+          <<option value="3">3</option>
+          <<option value="4">4</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui form">
+    <div class="three fields">
+      <div id="errorguest3" class="field">
+        <label>Guest3</label>
+        <input id="guest3" class="common input_guest3" placeholder="Guest3" type="text">
+        <label class="errormassage8">Please Input your guest</label>
+      </div>
+      <div id="errorguests" class="field">
+        <label>Number of Guests</label>
+        <input id="numberguests" class="common input_guests" placeholder="Number of Guests" type="text">
+        <label class="errormassage9">Please Input your number of guests</label>
+      </div>
+    </div>
+  </div>
+	
+  </section>
+  <section class="saveplace">
+    
+  <button id="myBtn" class="save button" type="submit" >Submit</button>
+  <button class="cancel button">Cancel</button>
+    <br><br>
+    <label class="inputcheck">Please check your Booking from</label>
+      <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" onclick="clickSpan()">&times;</span>
+        <h2>Success</h2>
+      </div>
+      <div class="modal-body">
+        <p>Completle Submit your Booking</p>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </section>	
+
+  <script src="index.js"></script>
+</body>
+</html>
