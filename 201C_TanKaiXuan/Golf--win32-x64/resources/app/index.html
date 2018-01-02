@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Golf Club Booking</title>
+    <link rel="stylesheet" href="Framework/semantic.min.css">
+    <link rel="stylesheet" href="css/type.css">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+  <form class="ui big form">
+    <h2 class="ui dividing header">Golf Club Booking</h2>
+     <div class="two fields">
+        <div class="field" id="error_membership_number">
+          <label>Membership number</label>
+            <input type="number" placeholder="Membership number" id="membership_number">
+            <button type="button" onclick="create()">Create a member number</button>
+          <div class="ui pointing red basic label" id="label_membership_number" style="display: none">
+            Please input the true membership number
+          </div>
+        </div>
+        <div class="field">
+          <label>Personal transport(Buggy)</label>
+          <select id="personal_transport">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+          </select>
+        </div>
+      </div>
+      <br>
+
+     <div class="field">
+        <label>Username</label>
+      <div class="two fields">
+        <div class="field" id="error_first_name">
+          <input type="text" name="shipping[first-name]" id="first_name" placeholder="First Name">
+          <div class="ui pointing red basic label" id="label_first_name" style="display: none">
+            Please input the first name
+          </div>
+        </div>
+        <div class="field" id="error_last_name">
+          <input type="text" name="shipping[last-name]" id="last_name" placeholder="Last Name">
+          <div class="ui pointing red basic label" id="label_last_name" style="display: none">
+            Please input the last name
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="two fields">
+      <div class="field" id="error_guest1">
+        <label>Guest 1</label>
+        <input type="text" id="guest1"> 
+        <div class="ui pointing red basic label" id="label_guest1" style="display: none">
+          Please input guest1
+        </div>
+      </div>
+      <div class="field" id="error_guest_number">
+        <label>Number of guest</label>
+        <input type="number" id="guest_number">
+        <div class="ui pointing red basic label" id="label_guest_number" style="display: none">
+          Please input the guest number
+        </div>
+      </div>
+    </div>
+    <br>
+  
+    <div class="two fields">
+      <div class="field" id="error_guest2">
+        <label>Guest 2</label>
+        <input type="text" id="guest2"> 
+        <div class="ui pointing red basic label" id="label_guest2" style="display: none">
+          Please input guest2
+        </div>
+      </div>
+      <div class="field">
+        <label>Number of holes</label>
+        <select id="holes_number">
+          <option value="9">9</option>
+          <option value="18">18</option>
+        </select>
+      </div>
+    </div>
+    <br> 
+    
+    <div class="two fields">
+      <div class="field" id="error_guest3">
+        <label>Guest 3</label>
+        <input type="text" id="guest3"> 
+        <div class="ui pointing red basic label removeLable" id="label_guest3" style="display: none">
+          Please input guest3
+        </div>
+      </div>
+      <div class="field" id="error_game_date">
+        <label>Date of game</label>
+        <input type="date" id="game_date">
+        <div class="ui pointing red basic label" id="label_game_date" style="display: none">
+          Please input the game date
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="two fields">
+      <div class="field">
+        <label>Number of golf bag trolleys</label>
+        <select id="bagTroll_number">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </div> 
+      <div class="field" id="error_booking_date">
+        <label>Booking Date</label>
+        <input type="date" id="booking_date">
+        <div class="ui pointing red basic label" id="label_booking_date" style="display: none">
+          Please input the booking date
+        </div>
+      </div>
+    </div>
+    <br>   
+
+    <div class="field">
+      <button id= "submit_button" type="button" class="ui submit button" onclick="validation() ">Submit</button>
+    </div>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <span class="close" onclick="clickSpan()">&times;</span>
+        <h2>Golf Club</h2>
+      </div>
+      <div class="modal-body">
+        <p>Success To submit The Form!</p>
+      </div>
+      <div class="modal-footer"></div>
+    </div>
+  </div>
+  </form>
+    
+</body>
+</html>
