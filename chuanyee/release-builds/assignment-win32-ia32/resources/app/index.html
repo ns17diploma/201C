@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment B</title>
+	<link rel="stylesheet" type="text/css" href="semantic-ui/semantic.min.css">
+</head>
+<body style="background-color: #A0CFEC">
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui hidden divider"></div>
+	<div class="ui form attached segment" style="width: 60%; margin: auto">
+		<h1 class="ui header" style="text-align: center;">BOOK INPUT FORM</h1>
+		<div class="ui negative message error-message" id="error0"> 
+	        <label class="header" style="text-align: center;">Please complete the form</label>
+	    </div>
+	    <div class="ui success message" id="success">
+    		<div class="header" style="text-align: center;">Form Completed</div>
+		</div>
+		<div class="ui hidden divider"></div>
+		<div class="ui hidden divider"></div>
+		<div class="ui form">
+		<div class="field">
+    	<div class="two fields">
+    	  <div class="field">
+    		<label>Membership Number</label>
+    	    <input type="number" name="IBSN" placeholder="Membership Number" id="number">
+                <div class="ui pointing basic red label error-message" id="error01">
+                    <label >Membership Number is not numeric</label>
+                </div>
+                <div class="ui pointing basic red label error-message" id="error02">
+                    <label>Membership Number is 6 digits</label>
+                </div>
+                <div class="ui pointing basic red label error-message" id="error03">
+                    <label> ISBN Number is not a valid modulus 11 number</label>    
+                </div>
+    	  </div>
+    	  <div class="field">
+    	  	<label>Number of holes</label>
+    	  	<select id="holes">
+    	  		<option></option>
+    	  		<option>9</option>
+    	  		<option>18</option>
+    	  	</select>
+    		</div>
+    	</div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	<div class="field">
+    	  	<label>First Name</label>
+    	    <input type="text" name="First Name" placeholder="First Name" id="first_name">
+    	</div>
+    	<div class="field">
+    	  	<label>Date of Game</label>
+    	    <input type="Date" name="Date of Game" placeholder="Date of Game" id="date_of_games">
+    	</div>
+    	</div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	<div class="field">
+    	  	<label>Last Name</label>
+    	    <input type="text" name="Last Name" placeholder="Last Name" id="last_name">
+    	</div>
+    	<div class="field">
+    	  	<label>Booking Date</label>
+    	    <input type="Date" name="Booking Date" placeholder="Booking Date" id="booking_date">
+    	</div>
+    	</div>
+
+    	<div class="ui hidden divider"></div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	  <div class="field">	
+    	    <label>Guest 1</label>
+    	    <input type="text" name="Guest 1" placeholder="Guest 1" id="guest1">
+    	  </div>
+    	  <div class="field">
+    		  <label>Personal Transport (Buggy)</label>
+    		  <select id="personal">
+    		  	<option></option>
+    		  	<option>Y</option>
+    		  	<option>N</option>
+    		  </select>
+		  </div>
+    	</div>
+    	</div>
+    	<div class="ui hidden divider"></div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	  <div class="field">	
+    	    <label>Guest 2</label>
+    	    <input type="text" name="Guest 2" placeholder="Guest 2" id="guest2">
+    	  </div>
+    	  <div class="field">
+    		  <label>Number of Golf Bag Trolleys</label>
+    		 <select id="golf">
+    		 	<option></option>
+    		 	<option>0</option>
+    		 	<option>1</option>
+    		 	<option>2</option>
+    		 	<option>3</option>
+    		 	<option>4</option>
+    		 </select>
+		  </div>
+    	</div>
+    	</div>
+    	<div class="ui hidden divider"></div>
+    	<div class="ui form">
+    	<div class="two fields">
+    	  <div class="field">	
+    	    <label>Guest 3</label>
+    	    <input type="text" name="Guest 3" placeholder="Guest 3" id="guest3">
+    	  </div>
+    	  <div class="field">
+    		  <label>Number of Guest</label>
+    		  <input type="text" name="Number of Guest" placeholder="Number of Guest" id="number_of_guest">
+		  </div>
+    	</div>
+    	</div>
+    		<div class="ui hidden divider"></div>
+			<div class="ui hidden divider"></div>
+    		<div class="ui form">
+	       	<div class="ui bottom attached buttons">
+	        <div class="ui primary button" id="save">Save</div>
+	      	</div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+            <div class="ui hidden divider"></div>
+	    </div>
+  </div>
+</div>
+</body>
+<script type="text/javascript" src="app.js"></script>
+</html>
