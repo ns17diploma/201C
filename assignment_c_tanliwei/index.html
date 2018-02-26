@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+  <title>Golf Club Bookings</title>
+  <link rel="stylesheet" type="text/css" href="node_modules/semantic-ui-css/semantic.min.css">
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/app.css">
+  </head>
+  <body>
+
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div class="ui hidden divider"></div>
+      <div class="ui text container">
+
+      <!-- TITLE -->
+      <h1 class="ui header">Golf Club Bookings</h1>
+      <div id="message_box" class="ui attached message">
+        <div class="header">
+          Welcome to Golf Club Bookings!
+        </div>
+          <p>Fill out the form below for bookings</p>
+      </div>
+
+      <!-- MEMBERSHIP NUMBER -->
+      <div class="ui form attached segment">
+        <div class="two fields">
+          <div class="field">
+            <label>Membership Number</label>
+            <input id="member_number" class="input_save" name='member_number' type="number" value="" placeholder="Membership Number">
+          </div>
+
+          <!-- NUMBER OF GOLF TROLLEYS -->
+          <div class="field">
+            <label>Number of Golf Bag Trolleys</label>
+            <select id="bag_trolleys" class="ui dropdown" name='type'>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- FIRST NAME -->
+        <div class="two fields">
+          <div class="field">
+            <label>First Name</label>
+            <input id="first_name" class="input_save" name='first-name' type="text" value="" placeholder="First Name">
+          </div>
+
+          <!-- LAST NAME -->
+          <div class="field">
+            <label>Last Name</label>
+            <input id="last_name" class="input_save" name='last-name' type="text" value="" placeholder="Last Name">
+          </div>
+        </div>
+        
+        <!-- GUEST -->
+        <div class="two fields">
+          <div class="field">
+            <label>Guest 1</label>
+            <input id="guest_1" class="input_save" name='first-name' type="text" value="" placeholder="Guest 1">
+          </div>
+          <div class="field">
+            <label>Guest 2</label>
+            <input id="guest_2" class="input_save" name='last-name' type="text" value="" placeholder="Guest 2">
+          </div>
+          <div class="field">
+            <label>Guest 3</label>
+            <input id="guest_3" class="input_save" name='last-name' type="text" value="" placeholder="Guest 3">
+          </div>
+        </div>
+
+        <!-- DATE OF GAME -->
+        <div class="two fields">
+          <div class="field">
+            <label>Date of Game</label>
+            <input id="date_game" type="date" value="2001-01-01">
+          </div>  
+
+        <!-- BOOKING DATE -->
+          <div class="field">
+            <label>Booking Date</label>
+            <input id="booking_date" type="date" value="2001-01-01">
+          </div>
+        </div>
+
+        <!-- NUMBER OF HOLES -->
+        <div class="two fields">
+          <div class="field">
+            <label>Number of Holes</label>
+            <select id="number_holes" class="ui dropdown" name="holes">
+              <option value="9">9</option>
+              <option value="18">18</option>
+            </select>
+          </div>
+          
+          <!-- PERSONAL TRANSPORT -->
+          <div class="field">
+            <label>Personal Transport (Buggy)</label>
+            <select id="personal_transport" class="ui dropdown" name="holes">
+              <option value="Y">Y</option>
+              <option value="N">N</option>
+            </select>
+            
+          </div>
+          </div>
+        </div>
+        
+      <div class="ui two bottom attached buttons">
+        <div class="ui primary button" id='save_button'>Save</div>
+        <div class="ui button" id="clear_button">Clear</div>
+      </div>
+    </div>
+
+    <script src="javascript/app.js"></script>
+
+  </body>
+</html>
